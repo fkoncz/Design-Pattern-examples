@@ -1,0 +1,18 @@
+Steps in high level:
+pip3 install django==3.0.1
+python manage.py createsuperuser to verify it runs
+python manage.py collectstatic to create static folder/files
+set settings in settings.py for static dirs and allowed hosts for non-debug run
+Create the model that reflects what kind of data we will have in the database.
+python manage.py makemigrations --> matches model file and creates/generates migration file (initial migration)
+python manage.py showmigrations --> default django apps, our own as well visible
+python manage.py migrate --> runs the migrations
+Creates sqlite database
+import csv data with a migration command (python manage.py load_pet_data)
+verify data with Django ORM commands (from adoptions.models import Pet, then pet.objects.all() for example)
+Create url patterns in urls.py
+Create views
+Create template html files using the view
+Add block content to staticly nicely defined html page
+python manage.py runserver
+DONE
